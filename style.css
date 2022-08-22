@@ -28,11 +28,40 @@ header{
      font-size: 12px;
      color: lightgrey;
 }
-#section{
+#selection{
      background-color: black;
      height: 350px ;   
 }
+#selection h3{
+     font-weight: 600;
+     color: #fff;
+     font-size: 18px;
+     margin-top: 10px;
+     margin-left: 40px;
+}
+#selection ul li{
+     color: #fff;
+     font-size: 16px;
+     margin-top: 10px;
+     margin-left: 40px;
+}
+
+
 #calculation-total{
      background-color: black;
-     height: 350px ; 
+     height: 380px ; 
+}
+
+#calculation-total h3{
+     font-weight: 600;
+     font-size: 18px;
+     margin-top: 15px;
+     margin-left: 60px;
+     color: #fff;  
+
+}
+.text-white{
+     font-size: 14px;
+     margin-top: 10px;
+     padding-left: 10px;
 }
