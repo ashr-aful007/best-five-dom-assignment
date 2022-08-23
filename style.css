@@ -42,8 +42,10 @@ header{
 #selection ul li{
      color: #fff;
      font-size: 16px;
-     margin-top: 10px;
-     margin-left: 40px;
+     height: 100%;
+     width: 100%;
+     list-style-type: none;
+    
 }
 
 
@@ -64,4 +66,11 @@ header{
      font-size: 14px;
      margin-top: 10px;
      padding-left: 10px;
+}
+input{  
+     padding: 5px;
+     background-color: lightgray;
+}
+.ul li{
+     direction: none;
 }

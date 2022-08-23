@@ -30,7 +30,7 @@
             <img src="images/lionelMessi.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">Lionel Messi</h5>
-              <a href="#" class="btn btn-primary w-100">SELECT</a>
+              <a href="#" onclick="btnClick(this)" class="btn btn-primary w-100">SELECT</a>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@
             <img src="images/neymar.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">Neymar jr</h5>
-              <a href="#" class="btn btn-primary w-100">SELECT</a>
+              <a href="#" onclick="btnClick(this)" class="btn btn-primary w-100">SELECT</a>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@
             <img src="images/cr7.jpg" class="card-img-top h-100 w-100" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">Ronaldo</h5>
-              <a href="#" class="btn btn-primary w-100">SELECT</a>
+              <a href="#" onclick="btnClick(this)" class="btn btn-primary w-100">SELECT</a>
             </div>
           </div>
         </div>
@@ -56,9 +56,11 @@
           <div class="card bg-dark " style="width: 12rem;">
             <div id="selection">
               <h3>Selected-<span id="selection-number">5</span></h3>
+              <div id="player-list">             
               <!-- <ul>
-                <li>1.messi</li>
+                <li>1 . messi</li>
               </ul> -->
+            </div>
             </div>
           </div>
         </div>
@@ -70,7 +72,7 @@
               <img src="images/Mbappy.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center">Kylian Mbappe</h5>
-                <a href="#" class="btn btn-primary w-100">SELECT</a>
+                <a href="#" onclick="btnClick(this)" class="btn btn-primary w-100">SELECT</a>
               </div>
             </div>
           </div>
@@ -79,7 +81,7 @@
               <img src="images/renato.jpg" class="card-img-top w-100 h-100" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center">Renato Sanches</h5>
-                <a href="#" class="btn btn-primary w-100">SELECT</a>
+                <a href="#" onclick="btnClick(this)" class="btn btn-primary w-100">SELECT</a>
               </div>
             </div>
           </div>
@@ -88,7 +90,7 @@
               <img src="images/sergio.jpg" class="card-img-top h-100 w-100" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center">Sergio Ramos</h5>
-                <a href="#" class="btn btn-primary w-100">SELECT</a>
+                <a href="#" onclick="btnClick(this)" class="btn btn-primary w-100">SELECT</a>
               </div>
             </div>
           </div>
@@ -97,18 +99,18 @@
               <div id="calculation-total">
                 <h3>Budget</h3>
                 <div class="d-flex">              
-                <p class="text-white ">Per Player</p><input class="w-50 d-inline-block " type="number">
+                <p class="text-white ">Per Player</p><input id="Per-player" class="w-50 d-inline-block " type="number">
                 </div> 
-                <button class="btn btn-primary w-75 mx-4 mt-2 mb-2">Calculate</button> 
-                <p class="text-white">Player Expenses $<span>1000</span></p>             
+                <button id="calculate-btn" class="btn btn-primary w-75 mx-4 mt-2 mb-2">Calculate</button> 
+                <p class="text-white">Player Expenses $<span id="player-Expenses">1000</span></p>             
                 <div class="d-flex">              
-                <p class="text-white ">Manager</p><input class="w-50 d-inline-block" type="number">
+                <p class="text-white ">Manager</p><input id="manager-Cost" class="w-50 d-inline-block" type="number">
                 </div>               
                 <div class="d-flex">              
-                <p class="text-white ">Coach</p><input class="w-50 d-inline-block mx-3" type="number"> 
+                <p class="text-white ">Coach</p><input id="coach-cost" class="w-50 d-inline-block mx-3" type="number"> 
                 </div> 
                    <div class="mt-3">
-                    <button class="btn btn-primary w-75 px-1 py-1 mx-4">Calculate Total</button> 
+                    <button id="calculate-Total" class="btn btn-primary w-75 px-1 py-1 mx-4">Calculate Total</button> 
                     <p class="text-white mx-1">Total <span id="sub-total" class="mx-5">$000</span></p>
                    </div>
               </div>
@@ -122,7 +124,7 @@
                 <img src="images/silva.jpg" class="card-img-top h-100 w-100" alt="...">
                 <div class="card-body">
                   <h5 class="card-title text-center">Silva</h5>
-                  <a href="#" class="btn btn-primary w-100">SELECT</a>
+                  <a href="#" onclick="btnClick(this)" class="btn btn-primary w-100">SELECT</a>
                 </div>
               </div>
             </div>
@@ -131,7 +133,7 @@
                 <img src="images/dymaria.jpg" class="card-img-top h-75 w-auto " alt="...">
                 <div class="card-body pb-5">
                   <h5 class="card-title text-center">Angel di Maria</h5>
-                  <a href="#" class="btn btn-primary w-100 ">SELECT</a>
+                  <a href="#" onclick="btnClick(this)" class="btn btn-primary w-100 ">SELECT</a>
                 </div>
               </div>
             </div>
@@ -140,7 +142,7 @@
                 <img src="images/ozil.jpg" class="card-img-top w-100 h-100" alt="...">
                 <div class="card-body">
                   <h5 class="card-title text-center">Ozil</h5>
-                  <a href="#" class="btn btn-primary w-100">SELECT</a>
+                  <a href="#" onclick="btnClick(this)" class="btn btn-primary w-100">SELECT</a>
                 </div>
               </div>
             </div>           
