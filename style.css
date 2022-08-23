@@ -74,3 +74,7 @@ input{
 .ul li{
      direction: none;
 }
+#sub-total{
+     color: tomato;
+}
+

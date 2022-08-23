@@ -23,6 +23,16 @@ function addPlayerName(names){
 }
 
 
+
+//de
+// const buttons = document.querySelectorAll('a')
+// for(let button of buttons){
+//      button.setAttribute('disabled');
+//      console.log(button)
+// }
+
+
+
 function btnClick(element){    
  
      const playerName = element.parentNode.children[0].innerText;
@@ -31,23 +41,29 @@ function btnClick(element){
      }
      playerNames.push(PlayerNameCollection);
      
-    document.getElementById('selection-number').innerText = playerNames.length;
+     document.getElementById('selection-number').innerText = playerNames.length;
 
      addPlayerName(playerNames)
 
-     // element.target.setAttribute("disabled", true);
+   const clickedBtn =  document.querySelector('a');
+   clickedBtn.style.pointerEvents = 'none';
+   clickedBtn.style.backgroundColor = 'lightgray';
+   
+
+   
 
 }
 
 //get input fild valule function
-function getInputFildValueWithId(inputFlidId){
-     
+function getInputFildValueWithId(inputFlidId){    
      const inputFildValue = document.getElementById(inputFlidId);
      const inputFldValueSring = inputFildValue.value;
      const getInputValue = parseInt(inputFldValueSring);
+     forValidation(getInputValue)
      return getInputValue;
      
 }
+
 function forValidation(inputValue){
    if(isNaN(inputValue)){
      alert('plese give valid number')
@@ -63,7 +79,6 @@ function forValidation(inputValue){
 function playerExpenses(){
      const inputFldParPlayer =  getInputFildValueWithId('Per-player');
      const perPlayerCost = playerNames.length * inputFldParPlayer;
-     forValidation(perPlayerCost)
      const playerExpenses = document.getElementById('player-Expenses');
      playerExpenses.innerHTML = perPlayerCost;
      return perPlayerCost;
@@ -74,7 +89,8 @@ function playerExpenses(){
 
 document.getElementById('calculate-btn').addEventListener('click', function(){
      
-     playerExpenses()  
+     playerExpenses() 
+      
      
 })
 
